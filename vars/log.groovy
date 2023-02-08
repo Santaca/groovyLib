@@ -6,8 +6,10 @@
 //     echo "WARNING: ${message}"
 // }
 
-def hello(message) {
+def call() {
     pipeline {
+        agent any
+
         stages {
             stage('Hola mundo') {
                 echo "Hola: ${message}"
