@@ -6,7 +6,7 @@
 //     echo "WARNING: ${message}"
 // }
 
-def call(message) {
+def hello(message) {
     pipeline {
         agent any
 
