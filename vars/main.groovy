@@ -1,3 +1,11 @@
 def hello() {
-    echo 'Hola mundo!'
+    pipeline {
+        agent none
+
+        stages {
+            stage('Hello') {
+                echo 'Hola mundo'
+            }
+        }
+    }
 }
