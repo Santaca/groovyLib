@@ -12,7 +12,9 @@ def call() {
 
         stages {
             stage('Hola mundo') {
-                echo "Hola: ${message}"
+                steps {
+                    echo "Hola: ${message}"
+                }
             }
         }
     }
